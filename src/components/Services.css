@@ -1,0 +1,110 @@
+.services-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: #fff;
+  padding: 80px 10%;
+  text-align: center;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.services-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffcc00;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.services-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ffcc00;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255, 204, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(255, 204, 0, 0.25);
+}
+
+.service-icon {
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.service-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.service-desc {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-left {
+  animation: slideLeft 1s ease forwards;
+}
+
+.slide-right {
+  animation: slideRight 1s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .services-heading {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    padding: 25px;
+  }
+}

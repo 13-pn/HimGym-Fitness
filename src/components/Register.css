@@ -1,0 +1,153 @@
+.register-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0b0b0b, #1a1a1a);
+  color: #fff;
+  padding: 60px 8%;
+  font-family: "Poppins", sans-serif;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.benefits-box {
+  flex: 1;
+  max-width: 45%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.2);
+}
+
+.benefits-box h2 {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.benefits-box span {
+  color: #ff2e00;
+}
+
+.benefits-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-box li {
+  font-size: 1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ddd;
+}
+
+.register-box {
+  flex: 1;
+  max-width: 40%;
+  background: #ffffff;
+  color: #111;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.2);
+  min-height: 500px;
+}
+
+.register-title {
+  text-align: center;
+  color: #d90429;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.register-form .form-group {
+  margin-bottom: 15px;
+}
+
+.register-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.register-form input,
+.register-form select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.4px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #d90429;
+  box-shadow: 0 0 6px rgba(217, 4, 41, 0.3);
+}
+
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.total-price {
+  color: #d90429;
+}
+
+.pay-btn {
+  width: 100%;
+  margin-top: 20px;
+  background: #d90429;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pay-btn:hover {
+  background: #b00320;
+  transform: translateY(-2px);
+}
+
+.register-success {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+  color: #333;
+}
+
+.success-icon {
+  color: #28a745;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+  .register-section {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 40px;
+  }
+
+  .benefits-box,
+  .register-box {
+    max-width: 100%;
+  }
+
+  .benefits-box {
+    margin-bottom: 30px;
+  }
+}

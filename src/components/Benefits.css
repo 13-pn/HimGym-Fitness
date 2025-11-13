@@ -1,0 +1,137 @@
+.benefit-section {
+  background-color: #0b0b0b;
+  color: white;
+  padding: 80px 10%;
+  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.benefit-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: #ffcf40;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.benefit-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffae00, #ffdf00);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.benefit-card {
+  background: #fcf8f8;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.1);
+  transition: all 0.8s ease;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.fade-in {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fade-out {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.benefit-img-container {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.benefit-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.benefit-card:hover .benefit-img {
+  transform: scale(1.05);
+}
+
+.benefit-content {
+  padding: 25px 20px 35px;
+}
+
+.benefit-heading {
+  color: navy;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.benefit-desc {
+  color: black;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: normal;
+  opacity: 1; 
+}
+
+
+.typing {
+  opacity: 1;
+  animation: typing 1.5s steps(40, end) forwards;
+}
+
+@keyframes typingEffect {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.typing {
+  animation: typingEffect 1.2s steps(40, end) forwards;
+}
+
+
+@media (max-width: 768px) {
+  .benefit-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .benefit-title {
+    font-size: 2.2rem;
+  }
+
+  .benefit-heading {
+    font-size: 1.3rem;
+  }
+}
