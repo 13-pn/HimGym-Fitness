@@ -42,6 +42,7 @@ const Contact = () => {
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          alt="Map is loading"
         ></iframe>
       </div>
     </section>
